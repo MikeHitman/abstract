@@ -7,3 +7,6 @@ Use it: [Github Codespace](https://github.com/codespaces)
 Paste the below command to interact with Abstract
 ```bash wget https://raw.githubusercontent.com/MikeHitman/abstract/main/abstract.sh && chmod +x abstract.sh && ./abstract.sh```
 
+Then press enter
+![My Image](images/my-image.png)
+
