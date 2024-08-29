@@ -58,7 +58,7 @@ echo
 npx hardhat compile --network abstractTestnet
 npx hardhat vars set DEPLOYER_PRIVATE_KEY
 mkdir deploy && touch deploy/deploy.ts
-cat << EOF > deploy/deploy.ts
+cat << 'EOF_SCRIPT' > deploy/deploy.ts
 import { Wallet } from "zksync-ethers";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { Deployer } from "@matterlabs/hardhat-zksync";
@@ -87,7 +87,7 @@ export default async function (hre: HardhatRuntimeEnvironment) {
   );
 }
 
-EOF
+EOF_SCRIPT
 
 echo
 npx hardhat deploy-zksync --script deploy.ts
